@@ -6,8 +6,6 @@ import { FiPlus } from "react-icons/fi";
 import "../styles/pages/create-orphanage.css";
 import Sidebar from "../components/Sidebar";
 import mapIcon from "../utils/mapIcon";
-import { URL } from "url";
-import { url } from "inspector";
 import api from "../services/api";
 import { useHistory } from "react-router-dom";
 
@@ -92,7 +90,7 @@ export default function CreateOrphanage() {
             >
               <TileLayer url={map_box_url} />
 
-              {position.latitude != 0 && (
+              {position.latitude !== 0 && (
                 <Marker
                   interactive={false}
                   icon={mapIcon}

@@ -2,8 +2,9 @@ import express from "express";
 import 'express-async-errors'
 import path from 'path';
 import cors from 'cors';
-import './models/Orphanage';
 
+import './models/Orphanage';
+import './models/User';
 import './database/connection';
 import routes from './routes';
 import errorHandler from './errors/handler'
